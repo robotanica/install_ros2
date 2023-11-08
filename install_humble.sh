@@ -9,7 +9,7 @@ export LANG=en_US.UTF-8
 
 locale  # verify settings
 
-sudo apt install software-properties-common
+sudo apt install -y software-properties-common
 sudo add-apt-repository universe
 
 sudo apt update && sudo apt install curl -y
@@ -29,3 +29,5 @@ sudo apt install -y ros-dev-tools
 # Possible values are: setup.bash, setup.sh, setup.zsh
 source /opt/ros/humble/setup.bash
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+
+sudo apt install -y python3-pip
